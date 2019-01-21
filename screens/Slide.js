@@ -22,7 +22,9 @@ class Slide extends React.Component {
       <Container style={styles.container}>
         <ImgSlide
           title={<TextStyle> Slide De Imagenes </TextStyle>}
-          images={images} />
+          images={images} 
+          playInterval = {5000}
+        />
       </Container>
     );
   }

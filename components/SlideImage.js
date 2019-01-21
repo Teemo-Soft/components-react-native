@@ -12,7 +12,7 @@ export default class ImgSlide extends React.Component {
         </View>
         <ImageSlider
           loop
-          autoPlayWithInterval={3000}
+          autoPlayWithInterval={this.props.playInterval}
           images={this.props.images} // DEBE SER UN ARRAY DE IMAGENES
           onPress={({ index }) => alert(index)}
           customSlide={({ index, item, style, width }) => (
@@ -40,7 +40,7 @@ export default class ImgSlide extends React.Component {
                     onPress={() => move(index)}
                     style={styles.button}
                   >
-                    <Text style={position === index ? styles.buttonSelected : { color: '#fff' }}>
+                    <Text style={position === index ? styles.buttonSelected : { color: '#fff',fontSize: 20 }}>
                       {index + 1}
                     </Text>
                   </TouchableHighlight>
@@ -95,6 +95,7 @@ const styles = StyleSheet.create({
   buttonSelected: {
     opacity: 1,
     color: 'red',
+    fontSize: 20
   },
   customSlide: {
     backgroundColor: 'green',

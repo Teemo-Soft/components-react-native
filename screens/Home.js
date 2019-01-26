@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import { TextStyle, Icon, ImgSlide } from '../components';
+import { TextStyle, Icon, ImgSlide, Chart } from '../components';
 import { Colors, Icons } from '../constants';
 import { Container } from "native-base";
 
@@ -16,6 +16,7 @@ class Home extends React.Component {
         <TextStyle>
           Home
         </TextStyle>
+        <Chart/>
       </Container>
     );
   }

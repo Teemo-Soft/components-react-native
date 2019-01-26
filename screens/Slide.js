@@ -6,16 +6,13 @@ import { Colors, Icons } from '../constants';
 import { Container } from "native-base";
 
 const images = [
-  'https://placeimg.com/640/640/nature',
-  'https://placeimg.com/640/640/people',
-  'https://placeimg.com/640/640/animals',
-  'https://placeimg.com/640/640/beer',
+  'https://www.landmarkbangkok.com/images/dining/Rendezvous-2.jpg',
+  'https://yumbocentrum.com/wordpress/wp-content/uploads/2018/01/Sky-Bar-Yumbo-3.jpg',
+  'https://www.mamashelter.com/files/live/sites/mamashelter/files/HP%20Rio/Restaurants/Bar/mama-shelter-rio-de-janeiro-bar%20(13).jpg',
+  'http://alvearpalace.com/resources/img/roof-hero.jpg',
 ];
 
 class Slide extends React.Component {
-  componentWillMount() {
-    this.props.navigation.openDrawer()
-  }
 
   render() {
     return (

@@ -20,5 +20,10 @@ export const ItemsNav = [
     name: "Slide",
     route: "Slide",
     icon: Icons.image,
+  },
+  {
+    name: "CardList",
+    route: "CardList",
+    icon : Icons.list,
   }
 ];

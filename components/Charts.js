@@ -6,8 +6,10 @@ const win = Dimensions.get('window');
 
 export default class Charts extends React.Component {
 
-
-    render() {
+    constructor(props){
+        super(props);
+      }
+        render() {
         var Highcharts='Highcharts';
         var conf={
                 chart: {
@@ -16,7 +18,7 @@ export default class Charts extends React.Component {
                     marginRight: 10,
                     events: {
                         load: function () {
-     
+    
                             // set up the updating of the chart each second
                             var series = this.series[0];
                             setInterval(function () {
@@ -64,7 +66,7 @@ export default class Charts extends React.Component {
                         var data = [],
                             time = (new Date()).getTime(),
                             i;
-     
+    
                         for (i = -19; i <= 0; i += 1) {
                             data.push({
                                 x: time + i * 1000,
@@ -75,21 +77,9 @@ export default class Charts extends React.Component {
                     }())
                 }]
             };
-     
-        const options = {
-            global: {
-                useUTC: false
-            },
-            lang: {
-                decimalPoint: ',',
-                thousandsSep: '.'
-            }
-        };
-     
         return (
-          <ChartView style={{height:100}} config={conf} options={options} javaScriptEnabled = { true }
-          domStorageEnabled = { true }></ChartView>
+          <ChartView javaScriptEnabled={true} domStorageEnabled={true} style={{flex:1}} config={conf} stock={false}></ChartView>
         );
-    }
+      }
 };
 

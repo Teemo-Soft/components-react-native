@@ -8,5 +8,6 @@ export default {
   settings: 'md-settings',
   link: 'md-link',
   logOut: 'ios-log-out',
-  image: 'md-image'
+  image: 'md-image',
+  list: 'ios-list-box'
 }

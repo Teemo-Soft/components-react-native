@@ -9,7 +9,8 @@ import {
   LinksScreen,
   SettingsScreen,
   Slide,
-  Home
+  Home,
+  CardList
 } from '../screens';
 import SideBar from './SideBar';
 
@@ -25,6 +26,9 @@ const AppDrawerNavigator = createDrawerNavigator({
   },
   Slide: {
     screen: Slide
+  },
+  CardList: {
+    screen : CardList
   }
 },
   {

@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import { TextStyle, Icon, ImgSlide } from '../components';
+import { TextStyle, Icon, ImgSlide, Chart, Cards } from '../components';
 import { Colors, Icons } from '../constants';
 import { Container } from "native-base";
 
@@ -14,8 +14,8 @@ class Home extends React.Component {
     return (
       <Container style={styles.container}>
         <TextStyle>
-          Home
-        </TextStyle>
+          HOME
+        </TextStyle>  
       </Container>
     );
   }

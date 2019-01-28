@@ -17,9 +17,8 @@ export default class ImgSlide extends React.Component {
           onPress={({ index }) => alert(index)}
           customSlide={({ index, item, style, width }) => (
             // Es importante poner estilo aquí para que se vea bien
-            <View style={styles.containerSlide}>
+            <View key={index} style={styles.containerSlide}>
               <View
-                key={index}
                 style={[
                   style,
                   styles.customSlide,
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
   },
   buttonSelected: {
     opacity: 1,
-    color: 'red',
+    color: 'blue',
     fontSize: 20
   },
   customSlide: {
